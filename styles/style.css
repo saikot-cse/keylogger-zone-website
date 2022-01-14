@@ -19,7 +19,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  padding: 0 120px;
   font-family: var(--primary-font);
   color: var(--primary-color);
 }
@@ -29,6 +28,7 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 100px;
+  padding: 0 120px;
 }
 .top-banner img {
   width: 440px;
@@ -57,8 +57,11 @@ body {
   margin-left: 8px;
 }
 /* Investor Company Styles  */
+.investor-company{
+  padding: 0 120px;
+}
 .investor-company hr {
-  background: linear-gradient(45deg,white,rgb(199, 197, 197),white);
+  background: linear-gradient(45deg, white, rgb(199, 197, 197), white);
   height: 1px;
   border: none;
 }
@@ -70,3 +73,95 @@ body {
 .company-logos img {
   margin: 35px 30px;
 }
+/* Product Collection */
+.product-collection {
+  margin-top: 100px;
+  padding: 0 140px;
+}
+.collection-header-title {
+  font-size: 28px;
+  text-align: center;
+  
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 50px;
+}
+.product {
+  width: 300px;
+  height: 450px;
+  padding: 17px 16px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+.product-image {
+  width: 300px;
+  height: 256px;
+}
+.product-title {
+  font-size: 28px;
+  margin-top: 0;
+  color: #18191f;
+  margin-bottom: -15px;
+  font-weight: 500;
+}
+.price {
+  font-size: 24px;
+  font-family: var(--secondary-font);
+  color: #000;
+}
+.ratings {
+  margin: -5px 0;
+  font-size: 14px;
+}
+.ratings .fa-star {
+  color: #fb8200;
+}
+.fa-star-half-alt {
+  color: #fb8200;
+}
+.ratings span {
+  margin-left: 8px;
+}
+.content {
+  font-size: 14px;
+  color: #787885;
+}
+.see-more {
+  float: right;
+  text-decoration: none;
+  color: var(--button-color);
+  font-weight: 700;
+}
+.see-more span {
+  margin-left: 5px;
+}
+/* Footer Style  */
+footer{
+  height: 240px;
+  background-color: #0a0826;
+  margin-top: 150px;
+}
+.footer-info {
+  width: 350px;
+  height: 139px;
+  text-align: center;
+  padding: 35px 498px;
+}
+.footer-info h1 {
+  font-size: 24px;
+  color: #fff;
+}
+.footer-info p{
+  font-size: 12px;
+  color: #fff;
+}
+.social-icons{
+  font-size: 28px;
+  margin: 0px 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
