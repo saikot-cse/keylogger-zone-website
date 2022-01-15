@@ -22,7 +22,27 @@ body {
   font-family: var(--primary-font);
   color: var(--primary-color);
 }
-/* Top Banner Style  */
+/*------------------------
+        Nav Styles  
+-------------------------*/
+.nav-menu{
+  display: flex;
+  align-items: center;
+  padding: 0 120px;
+  justify-content: space-between;
+}
+.menu-items a{
+  text-decoration: none;
+  color: var(--primary-color);
+  margin-left: 34px;
+  font-weight: 700;
+}
+.menu-items a:hover{
+  color: var(--button-color);
+}
+/*------------------------
+        Top Banner Styles  
+-------------------------*/
 .top-banner {
   display: flex;
   align-items: center;
@@ -66,7 +86,9 @@ body {
 .linked-button span {
   margin-left: 8px;
 }
-/* Investor Company Styles  */
+/*------------------------
+        Inverstor Company Styles  
+-------------------------*/
 .investor-company {
   padding: 0 120px;
 }
@@ -84,7 +106,9 @@ body {
 .company-logos img {
   margin: 35px 30px;
 }
-/* Product Collection */
+/*------------------------
+        Products Styles  
+-------------------------*/
 .product-collection {
   margin-top: 100px;
   padding: 0 140px;
@@ -148,7 +172,9 @@ body {
 .see-more span {
   margin-left: 5px;
 }
-/* NewsLetter Style  */
+/*------------------------
+        Newsletter Styles  
+-------------------------*/
 .newsletter {
   margin-top: 150px;
 }
@@ -164,6 +190,7 @@ body {
   font-size: 16px;
   margin: 10px;
   border-radius: 15px;
+}
 .form-container h1 {
   font-size: 32px;
 }
@@ -185,7 +212,9 @@ body {
   color: var(--button-color);
   border: 1px solid var(--button-color);
 }
-/* Footer Style  */
+/*------------------------
+        Footer Styles  
+-------------------------*/
 footer {
 
   background-color: #0a0826;
@@ -213,9 +242,19 @@ footer {
   color: var(--button-color);
 }
 
-/* Media Query Styles  */
+/*-----------------------------
+  Media Query Styles for Mobile  
+------------------------------*/
 
 @media only screen and (max-width: 578px) {
+  .nav-title{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: -5px;
+  }
+  .menu-items a{
+    display: none;
+  }
   .top-banner {
     flex-direction: column;
     padding: 0;
@@ -244,7 +283,6 @@ footer {
     margin-left: 130px;
     padding: 5px 12px;
   }
-  /* Investor Company Styles  */
   .investor-company {
     padding: 0;
   }
@@ -258,7 +296,6 @@ footer {
     width: 65px;
     height: 12px;
   }
-  /* Product Collection */
   .product-collection {
     margin-top: 50px;
     padding: 0px;
@@ -296,7 +333,112 @@ footer {
   .form-container input {
     padding: 10px;
   }
-  /* Footer styles  */
+  footer {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .footer-info {
+    text-align: center;
+    margin-left: 40px;
+    padding: 15px 0;
+  }
+}
+/*----------------------------
+  Media Query Styles for Ipads
+-----------------------------*/
+@media only screen and (min-width: 579px) and (max-width: 992px){
+  .nav-title{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: -5px;
+    margin-left: 135px;
+  }
+  .menu-items a{
+    display: none;
+  }
+  .top-banner {
+    flex-direction: column;
+    padding: 0;
+  }
+  .top-banner img {
+    margin-top: 80px;
+    width: 400px;
+    height: 400px;
+  }
+  .top-banner img:hover {
+    transform: rotate(360deg);
+    transition: transform 2s ease-in-out;
+  }
+  .top-banner-title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .top-banner-text {
+    font-size: 14px;
+    width: 530px;
+    margin-bottom: 22px;
+    text-align: center;
+    margin-left: 55px;
+  }
+  .linked-button {
+    margin-left: 230px;
+    padding: 10px 24px;
+  }
+  .investor-company {
+    padding: 0;
+  }
+  .company-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+  }
+  .company-logos img {
+    margin: 0;
+    width: 95px;
+    height: 20px;
+  }
+  .product-collection {
+    margin-top: 50px;
+    padding: 0px;
+  }
+  .collection-header-title {
+    font-size: 22px;
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 50px;
+  }
+  .product {
+    padding: 15px 10px;
+    margin-left: 45px;
+  }
+  .see-more {
+    float: none;
+    margin-left: 40%;
+    font-size: 20px;
+  }
+  .see-more span {
+    margin-left: 5px;
+  }
+  .newsletter {
+    margin-top: 50px;
+  }
+  .form-submit-button {
+    padding: 6px 15px;
+  }
+  .form-container {
+    
+    display: flex;
+    flex-direction: column;
+  }
+  .form-container input {
+    width: 60%;
+    padding: 10px;
+    margin-left: 17%;
+  }
   footer {
     margin-top: 30px;
     width: 100%;
