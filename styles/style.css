@@ -173,7 +173,7 @@ body {
   justify-content: center;
   margin: auto;
   font-size: 16px;
-  font-family: "poppins";
+  font-family: var(--primary-font);
   border: 1px solid #fff;
   background-color: var(--button-color);
   color: #fff;
@@ -289,13 +289,23 @@ footer {
   .newsletter {
     margin-top: 50px;
   }
+  .form-submit-button {
+    padding: 6px 15px;
+  }
+  .form-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .form-container input {
+    padding: 10px;
+  }
   /* Footer styles  */
   footer {
     margin-top: 30px;
   }
   .footer-info {
     text-align: center;
-    margin-left: 50px;
+    margin-left: 40px;
     padding:50px 0 0 0;
   }
   
